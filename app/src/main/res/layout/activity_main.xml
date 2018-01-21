@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtown.dumdumtest1.MainActivity">
+
+    <com.gigamole.infinitecycleviewpager.VerticalInfiniteCycleViewPager
+        android:id="@+id/horizontal_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="543dp"
+        app:icvp_center_page_scale_offset="30dp"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_medium_scaled="false"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_min_page_scale_offset="2dp"
+        app:icvp_scroll_duration="300" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMypage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="160dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/plus"
+        android:visibility="visible"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:fabSize="normal"
+        app:pressedTranslationZ="12dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>
